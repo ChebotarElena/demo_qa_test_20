@@ -8,7 +8,7 @@ public class DemoJUnitTets {
     @BeforeAll
     static void beforeAll(){
         System.out.println("### @BeforeAll");
-    //  Configuration.browser = "chrome";
+       // Configuration.browser = "chrome";
     }
 
     @AfterAll
@@ -16,13 +16,11 @@ public class DemoJUnitTets {
         System.out.println("### @AfterAll");
     }
 
-    //Для повторяющихся действий в тестах
     @BeforeEach
     void BeforeEach(){
         System.out.println("    ### @BeforeEach");
     }
 
-    //Для действий после выполнения теста: закрыть браузер, сохранить лог
     @AfterEach
     void AfterEach(){
         System.out.println("    ### @AfterEach");
